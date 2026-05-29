@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d379c69a-3aeb-4796-8b6e-b4c47a13f801",karate_version:"1.5.2",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.sampleJSON</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-05-29 12:24:04 PM</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Declare a JSON object and access it and print the values</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>Complex json object</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/sampleJSON.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Trying JSON declarations</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Declare a JSON object and access it and print the values</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>10</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsonObject =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.4">[
+      	{
+      		id: 1,
+      		name: &#39;Tom&#39;,
+      		age: 36
+      	},
+      		{
+      		id: 2,
+      		name: &#39;Peter&#39;,
+      		age: 30
+      }
+      ]</div>
+
+  
+
+  <div class="preformatted" data-parent="0.4">12:24:04.554 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonObject</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">12:24:04.561 [print] [
+  {
+    &quot;id&quot;: 1,
+    &quot;name&quot;: &quot;Tom&quot;,
+    &quot;age&quot;: 36
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;name&quot;: &quot;Peter&quot;,
+    &quot;age&quot;: 30
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonObject[0].name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">12:24:04.567 [print] Tom 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonObject[1].name + &quot; and his age is &quot; + jsonObject[1].age</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">12:24:04.568 [print] Peter and his age is 30 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">Complex json object</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>10</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def complexJsonObject =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.23">{
+&quot;orderId&quot;: &quot;ORD-2026-99X7A&quot;,
+&quot;status&quot;: &quot;PROCESSING&quot;,
+&quot;meta&quot;: {
+&quot;version&quot;: &quot;v2.4&quot;,
+&quot;environment&quot;: &quot;production&quot;,
+&quot;traceId&quot;: &quot;6f89b91c-7b02-4dca-8a1a-4f51e9b25f44&quot;,
+&quot;internalNotes&quot;: null
+},
+&quot;customer&quot;: {
+&quot;id&quot;: &quot;CUST-8831&quot;,
+&quot;profile&quot;: {
+ &quot;firstName&quot;: &quot;Alex&quot;,
+ &quot;lastName&quot;: &quot;Morgan&quot;,
+ &quot;email&quot;: &quot;alex.morgan@example.com&quot;
+},
+&quot;preferences&quot;: {
+ &quot;marketingOptIn&quot;: true,
+ &quot;preferredLanguage&quot;: &quot;en-US&quot;
+}
+},
+&quot;financials&quot;: {
+&quot;currency&quot;: &quot;USD&quot;,
+&quot;amounts&quot;: {
+ &quot;subtotal&quot;: 149.97,
+ &quot;shipping&quot;: 15.00,
+ &quot;tax&quot;: 11.25,
+ &quot;discount&quot;: -20.00,
+ &quot;total&quot;: 156.22
+},
+&quot;paymentDetails&quot;: [
+ {
+   &quot;method&quot;: &quot;CREDIT_CARD&quot;,
+   &quot;provider&quot;: &quot;Visa&quot;,
+   &quot;lastFour&quot;: &quot;4321&quot;,
+   &quot;amountAuthorized&quot;: 100.00,
+   &quot;status&quot;: &quot;CAPTURED&quot;
+ },
+ {
+   &quot;method&quot;: &quot;GIFT_CARD&quot;,
+   &quot;provider&quot;: &quot;StoreRewards&quot;,
+   &quot;cardCode&quot;: &quot;GC-992-XXXX&quot;,
+   &quot;amountAuthorized&quot;: 56.22,
+   &quot;status&quot;: &quot;CAPTURED&quot;
+ }
+]
+},
+&quot;shippingAddress&quot;: {
+&quot;street&quot;: &quot;123 Tech Ventures Blvd&quot;,
+&quot;suite&quot;: &quot;Suite 404&quot;,
+&quot;city&quot;: &quot;Austin&quot;,
+&quot;state&quot;: &quot;TX&quot;,
+&quot;postalCode&quot;: &quot;78701&quot;,
+&quot;coordinates&quot;: {
+ &quot;latitude&quot;: 30.2672,
+ &quot;longitude&quot;: -97.7431
+}
+},
+&quot;lineItems&quot;: [
+{
+ &quot;itemId&quot;: &quot;PROD-101&quot;,
+ &quot;name&quot;: &quot;Wireless Ergonomic Mouse&quot;,
+ &quot;category&quot;: &quot;Electronics&quot;,
+ &quot;pricing&quot;: {
+   &quot;unitPrice&quot;: 49.99,
+   &quot;taxable&quot;: true
+ },
+ &quot;quantity&quot;: 1,
+ &quot;tags&quot;: [&quot;office&quot;, &quot;hardware&quot;, &quot;wireless&quot;],
+ &quot;fulfillment&quot;: {
+   &quot;status&quot;: &quot;SHIPPED&quot;,
+   &quot;carrier&quot;: &quot;FedEx&quot;,
+   &quot;trackingNumber&quot;: &quot;123456789012&quot;
+ }
+},
+{
+ &quot;itemId&quot;: &quot;PROD-205&quot;,
+ &quot;name&quot;: &quot;Mechanical Keyboard (Blue Switches)&quot;,
+ &quot;category&quot;: &quot;Electronics&quot;,
+ &quot;pricing&quot;: {
+   &quot;unitPrice&quot;: 89.99,
+   &quot;taxable&quot;: true
+ },
+ &quot;quantity&quot;: 1,
+ &quot;tags&quot;: [&quot;office&quot;, &quot;hardware&quot;, &quot;mechanical&quot;],
+ &quot;fulfillment&quot;: {
+   &quot;status&quot;: &quot;BACKORDERED&quot;,
+   &quot;carrier&quot;: null,
+   &quot;trackingNumber&quot;: null
+ }
+},
+{
+ &quot;itemId&quot;: &quot;PROD-772&quot;,
+ &quot;name&quot;: &quot;Premium Gel Wrist Rest&quot;,
+ &quot;category&quot;: &quot;Office Supplies&quot;,
+ &quot;pricing&quot;: {
+   &quot;unitPrice&quot;: 9.99,
+   &quot;taxable&quot;: false
+ },
+ &quot;quantity&quot;: 1,
+ &quot;tags&quot;: [&quot;comfort&quot;, &quot;ergonomic&quot;],
+ &quot;fulfillment&quot;: {
+   &quot;status&quot;: &quot;PENDING&quot;,
+   &quot;carrier&quot;: &quot;USPS&quot;,
+   &quot;trackingNumber&quot;: &quot;9400100000000000000000&quot;
+ }
+}
+]
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.23">12:24:04.574 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print complexJsonObject</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.135">12:24:04.584 [print] {
+  &quot;orderId&quot;: &quot;ORD-2026-99X7A&quot;,
+  &quot;status&quot;: &quot;PROCESSING&quot;,
+  &quot;meta&quot;: {
+    &quot;version&quot;: &quot;v2.4&quot;,
+    &quot;environment&quot;: &quot;production&quot;,
+    &quot;traceId&quot;: &quot;6f89b91c-7b02-4dca-8a1a-4f51e9b25f44&quot;,
+    &quot;internalNotes&quot;: null
+  },
+  &quot;customer&quot;: {
+    &quot;id&quot;: &quot;CUST-8831&quot;,
+    &quot;profile&quot;: {
+      &quot;firstName&quot;: &quot;Alex&quot;,
+      &quot;lastName&quot;: &quot;Morgan&quot;,
+      &quot;email&quot;: &quot;alex.morgan@example.com&quot;
+    },
+    &quot;preferences&quot;: {
+      &quot;marketingOptIn&quot;: true,
+      &quot;preferredLanguage&quot;: &quot;en-US&quot;
+    }
+  },
+  &quot;financials&quot;: {
+    &quot;currency&quot;: &quot;USD&quot;,
+    &quot;amounts&quot;: {
+      &quot;subtotal&quot;: 149.97,
+      &quot;shipping&quot;: 15.0,
+      &quot;tax&quot;: 11.25,
+      &quot;discount&quot;: -20.0,
+      &quot;total&quot;: 156.22
+    },
+    &quot;paymentDetails&quot;: [
+      {
+        &quot;method&quot;: &quot;CREDIT_CARD&quot;,
+        &quot;provider&quot;: &quot;Visa&quot;,
+        &quot;lastFour&quot;: &quot;4321&quot;,
+        &quot;amountAuthorized&quot;: 100.0,
+        &quot;status&quot;: &quot;CAPTURED&quot;
+      },
+      {
+        &quot;method&quot;: &quot;GIFT_CARD&quot;,
+        &quot;provider&quot;: &quot;StoreRewards&quot;,
+        &quot;cardCode&quot;: &quot;GC-992-XXXX&quot;,
+        &quot;amountAuthorized&quot;: 56.22,
+        &quot;status&quot;: &quot;CAPTURED&quot;
+      }
+    ]
+  },
+  &quot;shippingAddress&quot;: {
+    &quot;street&quot;: &quot;123 Tech Ventures Blvd&quot;,
+    &quot;suite&quot;: &quot;Suite 404&quot;,
+    &quot;city&quot;: &quot;Austin&quot;,
+    &quot;state&quot;: &quot;TX&quot;,
+    &quot;postalCode&quot;: &quot;78701&quot;,
+    &quot;coordinates&quot;: {
+      &quot;latitude&quot;: 30.2672,
+      &quot;longitude&quot;: -97.7431
+    }
+  },
+  &quot;lineItems&quot;: [
+    {
+      &quot;itemId&quot;: &quot;PROD-101&quot;,
+      &quot;name&quot;: &quot;Wireless Ergonomic Mouse&quot;,
+      &quot;category&quot;: &quot;Electronics&quot;,
+      &quot;pricing&quot;: {
+        &quot;unitPrice&quot;: 49.99,
+        &quot;taxable&quot;: true
+      },
+      &quot;quantity&quot;: 1,
+      &quot;tags&quot;: [
+        &quot;office&quot;,
+        &quot;hardware&quot;,
+        &quot;wireless&quot;
+      ],
+      &quot;fulfillment&quot;: {
+        &quot;status&quot;: &quot;SHIPPED&quot;,
+        &quot;carrier&quot;: &quot;FedEx&quot;,
+        &quot;trackingNumber&quot;: &quot;123456789012&quot;
+      }
+    },
+    {
+      &quot;itemId&quot;: &quot;PROD-205&quot;,
+      &quot;name&quot;: &quot;Mechanical Keyboard (Blue Switches)&quot;,
+      &quot;category&quot;: &quot;Electronics&quot;,
+      &quot;pricing&quot;: {
+        &quot;unitPrice&quot;: 89.99,
+        &quot;taxable&quot;: true
+      },
+      &quot;quantity&quot;: 1,
+      &quot;tags&quot;: [
+        &quot;office&quot;,
+        &quot;hardware&quot;,
+        &quot;mechanical&quot;
+      ],
+      &quot;fulfillment&quot;: {
+        &quot;status&quot;: &quot;BACKORDERED&quot;,
+        &quot;carrier&quot;: null,
+        &quot;trackingNumber&quot;: null
+      }
+    },
+    {
+      &quot;itemId&quot;: &quot;PROD-772&quot;,
+      &quot;name&quot;: &quot;Premium Gel Wrist Rest&quot;,
+      &quot;category&quot;: &quot;Office Supplies&quot;,
+      &quot;pricing&quot;: {
+        &quot;unitPrice&quot;: 9.99,
+        &quot;taxable&quot;: false
+      },
+      &quot;quantity&quot;: 1,
+      &quot;tags&quot;: [
+        &quot;comfort&quot;,
+        &quot;ergonomic&quot;
+      ],
+      &quot;fulfillment&quot;: {
+        &quot;status&quot;: &quot;PENDING&quot;,
+        &quot;carrier&quot;: &quot;USPS&quot;,
+        &quot;trackingNumber&quot;: &quot;9400100000000000000000&quot;
+      }
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print complexJsonObject.financials.paymentDetails[0].lastFour +&quot; :: &quot;+ complexJsonObject.financials.paymentDetails[0].status</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.136">12:24:04.587 [print] 4321 :: CAPTURED 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
