@@ -4,6 +4,7 @@ Feature: Get API examples
     Given url baseUrl
 
   Scenario: Verify get users api call
+    Given path '/public/v2/users'
     When method GET
     Then status 200
     * print response
@@ -19,6 +20,7 @@ Feature: Get API examples
     * def status = 'active'
     * def name = 'Keerti Johar'
     * def id = 8056489
+    Given path '/public/v2/users'
     And path id
     When method GET
     Then status 200

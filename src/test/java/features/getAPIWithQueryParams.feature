@@ -6,6 +6,7 @@ Feature: Get API with Query parameters
   Scenario: Extract values using query params
     * def query = {status: 'active', gender: 'male', id: '8482963'}
     * print query
+    Given path '/public/v2/users'
     And params query
     When method GET
     Then status	200

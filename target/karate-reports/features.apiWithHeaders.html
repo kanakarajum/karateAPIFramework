@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-05-29 12:23:58 PM</div>
+    <div>2026-05-29 04:42:06 PM</div>
   </div>
 </div>
 
@@ -58,10 +58,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
             <a href="#[1:6]"><span>[1:6]</span> <span>WAY 1 :: Pass the user request with headers in an key:value pair</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:14]"><span>[2:14]</span> <span>WAY 2 :: Pass the request with header individually</span></a>
+            <a href="#[2:15]"><span>[2:15]</span> <span>WAY 2 :: Pass the request with header individually</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:22]"><span>[3:22]</span> <span>WAY 3 :: Pass the request with header using configure keyword</span></a>
+            <a href="#[3:24]"><span>[3:24]</span> <span>WAY 3 :: Pass the request with header using configure keyword</span></a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1709</span>
+              <span>ms:</span>&nbsp;<span>1604</span>
             </div>
           </div>
           <div class="step-row">
@@ -119,7 +119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">12:23:54.690 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:42:03.037 karate.env system property was: null 
 </div>   
 
   
@@ -139,7 +139,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def myHeaders = {&quot;Accept&quot;: &quot;application/json&quot;,&quot;Content-Type&quot;: &quot;application/json&quot;,&quot;Authorization&quot;: &quot;Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">38</div>
+    <div class="time-cell passed">45</div>
   </div>
 
    
@@ -164,10 +164,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">8</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>headers myHeaders</span>
+        <span>Given</span>&nbsp;<span>path &#39;/public/v2/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -192,10 +192,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">9</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;8482963&#39;</span>
+        <span>And</span>&nbsp;<span>headers myHeaders</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -220,79 +220,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>And</span>&nbsp;<span>path &#39;8482963&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1651</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.10">12:23:55.096 request:
-1 &gt; GET https://gorest.co.in/public/v2/users/8482963
-1 &gt; Accept: application/json
-1 &gt; Content-Type: application/json
-1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
-1 &gt; Host: gorest.co.in
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-12:23:56.417 response time in milliseconds: 1312
-1 &lt; 200
-1 &lt; Date: Fri, 29 May 2026 17:23:56 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; Content-Security-Policy-Report-Only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-5gfFiHaIC+8mzODtTiAwyg==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
-1 &lt; Etag: W/&quot;de80d7ad9c05abb2231982dff8dbd070&quot;
-1 &lt; Feature-Policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
-1 &lt; Referrer-Policy: strict-origin-when-cross-origin
-1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 &lt; Vary: Origin
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Frame-Options: SAMEORIGIN
-1 &lt; X-Permitted-Cross-Domain-Policies: none
-1 &lt; X-Ratelimit-Limit: 90
-1 &lt; X-Ratelimit-Remaining: 87
-1 &lt; X-Ratelimit-Reset: 1
-1 &lt; X-Request-Id: 6a00a3ea-51c5-46dd-8f18-8ae78179209a
-1 &lt; X-Runtime: 0.057849
-1 &lt; X-Xss-Protection: 0
-1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-1 &lt; Cf-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=JUbr7dIn7VIyFwAYlMj6cmMeELkyRLGta8GhcVbDWIiwz%2Fh0En9HTChIcjAVVjFA1kqpfxj8DeOtnDFrhNprwoFh7EBg%2FjokGu4prCL5%2BpjSOZfe7GpAtp1ZcpcKpp0%3D&quot;}]}
-1 &lt; Server: cloudflare
-1 &lt; CF-RAY: a037308fba93000b-ORD
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;id&quot;:8482963,&quot;name&quot;:&quot;AIAutomation Kanak&quot;,&quot;email&quot;:&quot;AIAutoKanak@example.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -313,8 +244,105 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1542</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">16:42:03.467 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/8482963
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:42:04.673 response time in milliseconds: 1200
+1 &lt; 200
+1 &lt; Date: Fri, 29 May 2026 21:42:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-7F8gXPx3rZWg96mD4wni/A==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;bed1338a4b245c54e67ee52c932dee77&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 89
+1 &lt; x-ratelimit-reset: 1
+1 &lt; x-request-id: ddb04729-a932-45c9-b14c-0322753211a4
+1 &lt; x-runtime: 0.032689
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=XmauFwV7x2vPfwuMFX%2Fu5ooLl72T1MoOaC%2BPQce4nqf2v4FUt%2BPoYPqrUdo3GBE0e2ILo3ro%2BmRD2X%2FgF5MUXgB9MqZZ6u%2BScrUk8EMHTIkBL1X0w9cKl3hceT%2FbkZw%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a038aaaebec4c5e4-ORD
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:8482963,&quot;name&quot;:&quot;Updated Name&quot;,&quot;email&quot;:&quot;AIAutoKanak@example.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
     <div class="step-container" id="0.12">
       <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print response</span>
@@ -329,12 +357,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.12">12:23:56.443 [print] {
+  <div class="preformatted" data-parent="0.13">16:42:04.686 [print] {
   &quot;id&quot;: 8482963,
-  &quot;name&quot;: &quot;AIAutomation Kanak&quot;,
+  &quot;name&quot;: &quot;Updated Name&quot;,
   &quot;email&quot;: &quot;AIAutoKanak@example.com&quot;,
   &quot;gender&quot;: &quot;male&quot;,
-  &quot;status&quot;: &quot;active&quot;
+  &quot;status&quot;: &quot;inactive&quot;
 }
  
 </div>   
@@ -345,29 +373,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:14]">
+          <div class="scenario-heading" id="[2:15]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:14]</span>
+                Scenario: <span>[2:15]</span>
                 <span class="scenario-name">WAY 2 :: Pass the request with header individually</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1079</span>
+              <span>ms:</span>&nbsp;<span>498</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:14]bg">
+            <div class="step-container" id="[2:15]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:14]bg"><div>
+          <div data-parent="[2:15]bg"><div>
   
 
   
@@ -389,36 +417,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">12:23:56.478 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">16:42:04.733 karate.env system property was: null 
 </div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
 
   
 
@@ -434,10 +434,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &quot;Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9&quot;</span>
+        <span>Given</span>&nbsp;<span>path &#39;/public/v2/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -462,7 +462,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;8056489&#39;</span>
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -490,10 +490,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method GET</span>
+        <span>And</span>&nbsp;<span>header Authorization = &quot;Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">1072</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -502,49 +502,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.18">12:23:56.489 request:
-1 &gt; GET https://gorest.co.in/public/v2/users/8056489
-1 &gt; Content-Type: application/json
-1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
-1 &gt; Host: gorest.co.in
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-12:23:57.551 response time in milliseconds: 1060
-1 &lt; 200
-1 &lt; Date: Fri, 29 May 2026 17:23:57 GMT
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-O18VLvXNbN0TPbtvlJYYfA==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
-1 &lt; etag: W/&quot;c7a55556239e9466a06a5698989dbe3d&quot;
-1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
-1 &lt; referrer-policy: strict-origin-when-cross-origin
-1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
-1 &lt; vary: Origin
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; x-permitted-cross-domain-policies: none
-1 &lt; x-ratelimit-limit: 90
-1 &lt; x-ratelimit-remaining: 89
-1 &lt; x-ratelimit-reset: 1
-1 &lt; x-request-id: 11b1a652-1a78-47bf-9d39-eb8e356bb4bd
-1 &lt; x-runtime: 0.048096
-1 &lt; x-xss-protection: 0
-1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-1 &lt; cf-cache-status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=WYdqjW3Kotn4OWr%2Fed8H09MNrh1RI61XWIxXprwNcyCyfeRC9W9TvnsPFAZS5TuO0936mhC2IsTK1qqUmfkivDDsvTccJNs2qYpl9tcE37kcGlkW2clWnB14uUt885Q%3D&quot;}]}
-1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=17,cfOrigin;dur=922
-1 &lt; Server: cloudflare
-1 &lt; CF-RAY: a0373096adc861be-ORD
-1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;id&quot;:8056489,&quot;name&quot;:&quot;Keerti Johar&quot;,&quot;email&quot;:&quot;keerti_johar@jacobson.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;}
-
-</div>   
+     
 
   
 
@@ -560,7 +518,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>path &#39;8056489&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -588,155 +546,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">20</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.20">12:23:57.562 [print] {
-  &quot;id&quot;: 8056489,
-  &quot;name&quot;: &quot;Keerti Johar&quot;,
-  &quot;email&quot;: &quot;keerti_johar@jacobson.test&quot;,
-  &quot;gender&quot;: &quot;female&quot;,
-  &quot;status&quot;: &quot;active&quot;
-}
- 
-</div>   
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:22]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:22]</span>
-                <span class="scenario-name">WAY 3 :: Pass the request with header using configure keyword</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1061</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:22]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:22]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url baseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">12:23:57.584 karate.env system property was: null 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.23">
-      <div class="step-ref passed">23</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure headers = {&quot;Accept&quot;: &quot;application/json&quot;,&quot;Content-Type&quot;: &quot;application/json&quot;,&quot;Authorization&quot;: &quot;Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9&quot;}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.24">
-      <div class="step-ref passed">24</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;8482963&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.25">
-      <div class="step-ref passed">25</div>
-      
-      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">1057</div>
+    <div class="time-cell passed">482</div>
   </div>
 
    
@@ -745,9 +558,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.25">12:23:57.656 request:
-1 &gt; GET https://gorest.co.in/public/v2/users/8482963
-1 &gt; Accept: application/json
+  <div class="preformatted" data-parent="0.20">16:42:04.744 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/8056489
 1 &gt; Content-Type: application/json
 1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
 1 &gt; Host: gorest.co.in
@@ -756,35 +568,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-12:23:58.701 response time in milliseconds: 1043
+16:42:05.210 response time in milliseconds: 454
 1 &lt; 200
-1 &lt; Date: Fri, 29 May 2026 17:23:58 GMT
+1 &lt; Date: Fri, 29 May 2026 21:42:04 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-VELqKOz0guwyIBF8Jz+pQQ==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
-1 &lt; etag: W/&quot;de80d7ad9c05abb2231982dff8dbd070&quot;
-1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
-1 &lt; referrer-policy: strict-origin-when-cross-origin
-1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
-1 &lt; vary: Origin
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; x-permitted-cross-domain-policies: none
-1 &lt; x-ratelimit-limit: 90
-1 &lt; x-ratelimit-remaining: 89
-1 &lt; x-ratelimit-reset: 1
-1 &lt; x-request-id: 8c6f3981-f806-40b6-a98a-f1394b8c7a95
-1 &lt; x-runtime: 0.050772
-1 &lt; x-xss-protection: 0
+1 &lt; Content-Security-Policy-Report-Only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-+sCTIl1ITxj6FE1A5pmaXQ==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; Etag: W/&quot;c7a55556239e9466a06a5698989dbe3d&quot;
+1 &lt; Feature-Policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Ratelimit-Limit: 90
+1 &lt; X-Ratelimit-Remaining: 89
+1 &lt; X-Ratelimit-Reset: 2
+1 &lt; X-Request-Id: 78aa3f18-8f5b-4d93-8f8d-3ea2c8b130cc
+1 &lt; X-Runtime: 0.059213
+1 &lt; X-Xss-Protection: 0
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-1 &lt; cf-cache-status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=cYcNj8WOCjTuBBOCfoS34egmixU4RWnw22l83X9SW8lhbChSbY8M8yA%2BEUl%2FezQOG7kRSqdMf%2FxnOARdLkDdSH9LhwzVP1mOXRmDQ1i9yMuNFCi3nUUytFMo3YwYioA%3D&quot;}]}
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=e2yIdk1IfYq3hNK3HNeS%2F2EHk9g%2B6kFzSt89Vrn9KCahduq0q2vJbopL5IH0pqXTelnxM%2Fp7Gq8dUgYi%2B00K9XjdJRlbeVixyInptgSWWbtA5ChR4Zf482EuETNEVu8%3D&quot;}]}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=12,cfOrigin;dur=334
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: a037309e0878eb62-ORD
+1 &lt; CF-RAY: a038aab52d8f025e-ORD
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;id&quot;:8482963,&quot;name&quot;:&quot;AIAutomation Kanak&quot;,&quot;email&quot;:&quot;AIAutoKanak@example.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
+{&quot;id&quot;:8056489,&quot;name&quot;:&quot;Keerti Johar&quot;,&quot;email&quot;:&quot;keerti_johar@jacobson.test&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;status&quot;:&quot;active&quot;}
 
 </div>   
 
@@ -798,8 +612,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -826,8 +640,278 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.22">16:42:05.236 [print] {
+  &quot;id&quot;: 8056489,
+  &quot;name&quot;: &quot;Keerti Johar&quot;,
+  &quot;email&quot;: &quot;keerti_johar@jacobson.test&quot;,
+  &quot;gender&quot;: &quot;female&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:24]</span>
+                <span class="scenario-name">WAY 3 :: Pass the request with header using configure keyword</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1011</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:42:05.260 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/public/v2/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure headers = {&quot;Accept&quot;: &quot;application/json&quot;,&quot;Content-Type&quot;: &quot;application/json&quot;,&quot;Authorization&quot;: &quot;Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
     <div class="step-container" id="0.27">
       <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;8482963&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1005</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">16:42:05.275 request:
+1 &gt; GET https://gorest.co.in/public/v2/users/8482963
+1 &gt; Accept: application/json
+1 &gt; Content-Type: application/json
+1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:42:06.276 response time in milliseconds: 1000
+1 &lt; 200
+1 &lt; Date: Fri, 29 May 2026 21:42:05 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-DiwRPtWyykRAiTdcuaZ3/Q==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;bed1338a4b245c54e67ee52c932dee77&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 88
+1 &lt; x-ratelimit-reset: 2
+1 &lt; x-request-id: b3be32c4-1848-4807-b623-ff532dd34261
+1 &lt; x-runtime: 0.098221
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=xG%2Fp16W6FllsQS387s3m62BFTGHVq%2BZ6i4GELU%2FCtJ%2BYjFcIvaTX%2FnVOMUqhn5G1R3pbe9sQv5a3CZMP%2BGcHkTq9gCjktsLxF1zjY2zU9e8QE3b8OpqryRRm%2F05rlA0%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a038aab858d54138-ORD
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:8482963,&quot;name&quot;:&quot;Updated Name&quot;,&quot;email&quot;:&quot;AIAutoKanak@example.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;inactive&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print response</span>
@@ -842,12 +926,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">12:23:58.707 [print] {
+  <div class="preformatted" data-parent="0.30">16:42:06.278 [print] {
   &quot;id&quot;: 8482963,
-  &quot;name&quot;: &quot;AIAutomation Kanak&quot;,
+  &quot;name&quot;: &quot;Updated Name&quot;,
   &quot;email&quot;: &quot;AIAutoKanak@example.com&quot;,
   &quot;gender&quot;: &quot;male&quot;,
-  &quot;status&quot;: &quot;active&quot;
+  &quot;status&quot;: &quot;inactive&quot;
 }
  
 </div>   
