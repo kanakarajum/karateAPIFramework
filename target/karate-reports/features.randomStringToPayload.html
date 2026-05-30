@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,13 +49,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-05-29 07:01:11 PM</div>
+    <div>2026-05-29 07:21:41 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:30]"><span>[1:30]</span> <span>Working with functions into scenarios</span></a>
+            <a href="#[1:20]"><span>[1:20]</span> <span>Working with functions into scenarios</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:50]"><span>[2:50]</span> <span>Working with functions into scenarios - calling external json file</span></a>
           </div>
         </div>
       </div>
@@ -69,29 +72,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:30]">
+          <div class="scenario-heading" id="[1:20]">
             <div class="heading-container">
               <div class="scenario-tags">
                 <a class="badge badge-primary" href="karate-tags.html">postAPIRandomString</a>
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:30]</span>
+                Scenario: <span>[1:20]</span>
                 <span class="scenario-name">Working with functions into scenarios</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2185</span>
+              <span>ms:</span>&nbsp;<span>1990</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:30]bg">
+            <div class="step-container" id="[1:20]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:30]bg"><div>
+          <div data-parent="[1:20]bg"><div>
   
 
   
@@ -113,14 +116,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">19:01:09.637 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">19:21:38.619 karate.env system property was: null 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:30]bg"><div>
+          <div data-parent="[1:20]bg"><div>
   
 
   <div class="step-row">
@@ -140,7 +143,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomString =</span>
       </div>
     </div>
-    <div class="time-cell passed">42</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -162,7 +165,7 @@ return result;
 
 </div>
 </div>
-          <div data-parent="[1:30]bg"><div>
+          <div data-parent="[1:20]bg"><div>
   
 
   
@@ -175,7 +178,7 @@ return result;
         <span>*</span>&nbsp;<span>def randomPrefix = randomString(10)</span>
       </div>
     </div>
-    <div class="time-cell passed">23</div>
+    <div class="time-cell passed">20</div>
   </div>
 
    
@@ -190,25 +193,25 @@ return result;
 
 </div>
 </div>
-          <div data-parent="[1:30]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref bg-step">18</div>
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def requestPayload =</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">66</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.18">{
+  <div class="preformatted" data-parent="0.21">{
 &quot;name&quot;: &quot;AI Karate FW agent&quot;,
 &quot;gender&quot;: &quot;male&quot;,
 &quot;status&quot;: &quot;active&quot;
@@ -222,20 +225,20 @@ return result;
 
 </div>
 </div>
-          <div data-parent="[1:30]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.26">
-      <div class="step-ref bg-step">26</div>
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>requestPayload.email = randomPrefix + &quot;@gmail.com&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -250,20 +253,20 @@ return result;
 
 </div>
 </div>
-          <div data-parent="[1:30]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.27">
-      <div class="step-ref bg-step">27</div>
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>print requestPayload</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">19</div>
   </div>
 
    
@@ -272,11 +275,11 @@ return result;
 
   
 
-  <div class="preformatted" data-parent="0.27">19:01:09.867 [print] {
+  <div class="preformatted" data-parent="0.30">19:21:38.821 [print] {
   &quot;name&quot;: &quot;AI Karate FW agent&quot;,
   &quot;gender&quot;: &quot;male&quot;,
   &quot;status&quot;: &quot;active&quot;,
-  &quot;email&quot;: &quot;ZCUjwOcFKS@gmail.com&quot;
+  &quot;email&quot;: &quot;tUoomApsrH@gmail.com&quot;
 }
  
 </div>   
@@ -298,7 +301,7 @@ return result;
         <span>Given</span>&nbsp;<span>path &#39;/public/v2/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -326,7 +329,7 @@ return result;
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + myToken</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -382,7 +385,7 @@ return result;
         <span>And</span>&nbsp;<span>request requestPayload</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -410,7 +413,7 @@ return result;
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">1981</div>
+    <div class="time-cell passed">1795</div>
   </div>
 
    
@@ -419,7 +422,7 @@ return result;
 
   
 
-  <div class="preformatted" data-parent="0.35">19:01:10.421 request:
+  <div class="preformatted" data-parent="0.35">19:21:39.250 request:
 1 &gt; POST https://gorest.co.in/public/v2/users
 1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
 1 &gt; Content-Type: application/json; charset=UTF-8
@@ -428,40 +431,40 @@ return result;
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;AI Karate FW agent&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;,&quot;email&quot;:&quot;ZCUjwOcFKS@gmail.com&quot;}
+{&quot;name&quot;:&quot;AI Karate FW agent&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;,&quot;email&quot;:&quot;tUoomApsrH@gmail.com&quot;}
 
-19:01:11.859 response time in milliseconds: 1430
+19:21:40.621 response time in milliseconds: 1365
 1 &lt; 201
-1 &lt; Date: Sat, 30 May 2026 00:01:11 GMT
+1 &lt; Date: Sat, 30 May 2026 00:21:39 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 107
 1 &lt; Connection: keep-alive
 1 &lt; Cache-Control: max-age=0, private, must-revalidate
-1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-eZNXlmK0vIL77JS95WNwig==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
-1 &lt; etag: W/&quot;554b2ad204e07f068a629f7780d0d6bb&quot;
-1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
-1 &lt; location: https://gorest.co.in/public/v2/users/8483131
-1 &lt; referrer-policy: strict-origin-when-cross-origin
-1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
-1 &lt; vary: Origin
-1 &lt; x-content-type-options: nosniff
-1 &lt; x-frame-options: SAMEORIGIN
-1 &lt; x-permitted-cross-domain-policies: none
-1 &lt; x-ratelimit-limit: 90
-1 &lt; x-ratelimit-remaining: 89
-1 &lt; x-ratelimit-reset: 1
-1 &lt; x-request-id: e7ace5cf-d88a-4e08-b821-46e4dce01802
-1 &lt; x-runtime: 0.088412
-1 &lt; x-xss-protection: 0
+1 &lt; Content-Security-Policy-Report-Only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-tH8hpAwpxtSiBI7BBjDJkA==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; Etag: W/&quot;a7043aa1c6113ee5408f6211fb5dc249&quot;
+1 &lt; Feature-Policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; Location: https://gorest.co.in/public/v2/users/8483135
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Ratelimit-Limit: 90
+1 &lt; X-Ratelimit-Remaining: 89
+1 &lt; X-Ratelimit-Reset: 1
+1 &lt; X-Request-Id: 6be51d60-de82-419d-991e-931c38437f29
+1 &lt; X-Runtime: 0.047227
+1 &lt; X-Xss-Protection: 0
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-1 &lt; cf-cache-status: DYNAMIC
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=GlCUARAfnFH4cz0tY%2B9qGiJaTBGJKeYCkFQSO2Sj7L363ZRNVWoTgqFNbHryIRlhKoY5275sin6w4Z0d0cNBVb2N3mxkI1418N2lIYe8McqTYynTWvm4OixurN9Rtm0%3D&quot;}]}
+1 &lt; Cf-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=LnLn3kuuVBuXpw%2B6%2F6e5uGpX5oSzIJ6PfMokZ%2BUxlVAeMsbadfhc6tsY3HiOI4wd1uJ%2B98O3l7db1W5dt0U8%2BkiLa%2BLCZQaRc8CTqxJDZcdpoJeIRhE9mvh8bC0mOCE%3D&quot;}]}
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=10,cfOrigin;dur=886
+1 &lt; Server-Timing: cfEdge;dur=8,cfOrigin;dur=931
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: a0397676ea9991ef-ORD
+1 &lt; CF-RAY: a03994766ae111fd-ORD
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
-{&quot;id&quot;:8483131,&quot;name&quot;:&quot;AI Karate FW agent&quot;,&quot;email&quot;:&quot;ZCUjwOcFKS@gmail.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
+{&quot;id&quot;:8483135,&quot;name&quot;:&quot;AI Karate FW agent&quot;,&quot;email&quot;:&quot;tUoomApsrH@gmail.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
 
 </div>   
 
@@ -482,7 +485,7 @@ return result;
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -519,10 +522,10 @@ return result;
 
   
 
-  <div class="preformatted" data-parent="0.37">19:01:11.869 [print] {
-  &quot;id&quot;: 8483131,
+  <div class="preformatted" data-parent="0.37">19:21:40.630 [print] {
+  &quot;id&quot;: 8483135,
   &quot;name&quot;: &quot;AI Karate FW agent&quot;,
-  &quot;email&quot;: &quot;ZCUjwOcFKS@gmail.com&quot;,
+  &quot;email&quot;: &quot;tUoomApsrH@gmail.com&quot;,
   &quot;gender&quot;: &quot;male&quot;,
   &quot;status&quot;: &quot;active&quot;
 }
@@ -546,7 +549,7 @@ return result;
         <span>*</span>&nbsp;<span>def responseBody = response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -574,7 +577,7 @@ return result;
         <span>*</span>&nbsp;<span>match responseBody.name == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">22</div>
+    <div class="time-cell passed">21</div>
   </div>
 
    
@@ -630,7 +633,7 @@ return result;
         <span>*</span>&nbsp;<span>match responseBody.gender == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -658,7 +661,7 @@ return result;
         <span>*</span>&nbsp;<span>match responseBody.status == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -686,7 +689,7 @@ return result;
         <span>*</span>&nbsp;<span>match responseBody.name == &#39;AI Karate FW agent&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -714,7 +717,7 @@ return result;
         <span>*</span>&nbsp;<span>print responseBody.email + &#39; --- this is from response&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -723,7 +726,7 @@ return result;
 
   
 
-  <div class="preformatted" data-parent="0.44">19:01:11.903 [print] ZCUjwOcFKS@gmail.com --- this is from response 
+  <div class="preformatted" data-parent="0.44">19:21:40.663 [print] tUoomApsrH@gmail.com --- this is from response 
 </div>   
 
   
@@ -743,7 +746,7 @@ return result;
         <span>*</span>&nbsp;<span>match responseBody.email contains requestPayload.email</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -771,7 +774,7 @@ return result;
         <span>*</span>&nbsp;<span>match responseBody.gender == &#39;male&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -800,6 +803,749 @@ return result;
       </div>
     </div>
     <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:50]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">postAPIRandomString</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:50]</span>
+                <span class="scenario-name">Working with functions into scenarios - calling external json file</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>528</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:50]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:21:40.710 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:50]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># random string function</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomString =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6">function(length) {
+var pool = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&quot;;
+var result = &quot;&quot;;
+for (var i = 0; i &lt; length; i++) {
+ result += pool.charAt(Math.floor(Math.random() * pool.length));
+}
+return result;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:50]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref bg-step">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomPrefix = randomString(10)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestPayload = read(&#39;create_users_randomString.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>requestPayload.email = randomPrefix + &quot;@gmail.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print requestPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.53">19:21:40.738 [print] {
+  &quot;name&quot;: &quot;AI Karate FW agent&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;status&quot;: &quot;active&quot;,
+  &quot;email&quot;: &quot;iWkLMNQOCb@gmail.com&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/public/v2/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + myToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &quot;application/json&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request requestPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">482</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.58">19:21:40.745 request:
+1 &gt; POST https://gorest.co.in/public/v2/users
+1 &gt; Authorization: Bearer 5188ca0fca93a740de2a85f61a5bba9db4c7ab35e2109d5436d364d6222aacf9
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 94
+1 &gt; Host: gorest.co.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/23.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;AI Karate FW agent&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;,&quot;email&quot;:&quot;iWkLMNQOCb@gmail.com&quot;}
+
+19:21:41.219 response time in milliseconds: 470
+1 &lt; 201
+1 &lt; Date: Sat, 30 May 2026 00:21:40 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 107
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; content-security-policy-report-only: default-src &#39;self&#39;; script-src &#39;self&#39; https://pagead2.googlesyndication.com &#39;nonce-9Ew6PSCMJ6rUxJSrA9RTtg==&#39;; style-src &#39;self&#39; &#39;unsafe-inline&#39; https://fonts.googleapis.com; img-src &#39;self&#39; data: https:; font-src &#39;self&#39; https://fonts.gstatic.com; connect-src &#39;self&#39; https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src &#39;none&#39;; frame-ancestors &#39;none&#39;; base-uri &#39;self&#39;; form-action &#39;self&#39;
+1 &lt; etag: W/&quot;86b004011a14d599b9d7ce86d440dd88&quot;
+1 &lt; feature-policy: camera &#39;none&#39;; gyroscope &#39;none&#39;; microphone &#39;none&#39;; usb &#39;none&#39;; fullscreen &#39;self&#39;
+1 &lt; location: https://gorest.co.in/public/v2/users/8483136
+1 &lt; referrer-policy: strict-origin-when-cross-origin
+1 &lt; strict-transport-security: max-age=63072000; includeSubDomains
+1 &lt; vary: Origin
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; x-permitted-cross-domain-policies: none
+1 &lt; x-ratelimit-limit: 90
+1 &lt; x-ratelimit-remaining: 89
+1 &lt; x-ratelimit-reset: 2
+1 &lt; x-request-id: 60b51de4-5781-4697-aab0-6640b5e306a1
+1 &lt; x-runtime: 0.085958
+1 &lt; x-xss-protection: 0
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=pFkdgDgtk6XBa%2FkyRw6H3T4cEA2%2FAT8C1r2aWUJCkBfWwkXrpbErn5XETzrgQBPzKIiDUHJu2cJHuvvVYhMGGp%2BAnR2oMzrbvndscnn7%2BaIjacz7wZwr2eSuCLkTOEA%3D&quot;}]}
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=12,cfOrigin;dur=371
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: a039947dbcd4a3db-ORD
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;id&quot;:8483136,&quot;name&quot;:&quot;AI Karate FW agent&quot;,&quot;email&quot;:&quot;iWkLMNQOCb@gmail.com&quot;,&quot;gender&quot;:&quot;male&quot;,&quot;status&quot;:&quot;active&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">19:21:41.226 [print] {
+  &quot;id&quot;: 8483136,
+  &quot;name&quot;: &quot;AI Karate FW agent&quot;,
+  &quot;email&quot;: &quot;iWkLMNQOCb@gmail.com&quot;,
+  &quot;gender&quot;: &quot;male&quot;,
+  &quot;status&quot;: &quot;active&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseBody = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.name == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.63">
+      <div class="step-ref passed">63</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.email == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.gender == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.status == &#39;#string&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.name == &#39;AI Karate FW agent&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print responseBody.email + &#39; --- this is from response&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.67">19:21:41.236 [print] iWkLMNQOCb@gmail.com --- this is from response 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.email contains requestPayload.email</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.gender == &#39;male&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match responseBody.status == &#39;active&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
   </div>
 
    

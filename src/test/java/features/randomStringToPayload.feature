@@ -15,6 +15,9 @@ Feature: Working with random strings, functions and passing it into scenario
       }
       """
     * def randomPrefix = randomString(10)
+
+  @postAPIRandomString
+  Scenario: Working with functions into scenarios
     * def requestPayload =
       """
       {
@@ -25,9 +28,29 @@ Feature: Working with random strings, functions and passing it into scenario
       """
     * requestPayload.email = randomPrefix + "@gmail.com"
     * print requestPayload
+    Given path '/public/v2/users'
+    And header Authorization = 'Bearer ' + myToken
+    And header Content-Type = "application/json"
+    And request requestPayload
+    When method POST
+    Then status 201
+    * print response
+    * def responseBody = response
+    * match responseBody.name == '#string'
+    * match responseBody.email == '#string'
+    * match responseBody.gender == '#string'
+    * match responseBody.status == '#string'
+    * match responseBody.name == 'AI Karate FW agent'
+    * print responseBody.email + ' --- this is from response'
+    * match responseBody.email contains requestPayload.email
+    * match responseBody.gender == 'male'
+    * match responseBody.status == 'active'
 
   @postAPIRandomString
-  Scenario: Working with functions into scenarios
+  Scenario: Working with functions into scenarios - calling external json file
+    * def requestPayload = read('create_users_randomString.json')
+    * requestPayload.email = randomPrefix + "@gmail.com"
+    * print requestPayload
     Given path '/public/v2/users'
     And header Authorization = 'Bearer ' + myToken
     And header Content-Type = "application/json"
