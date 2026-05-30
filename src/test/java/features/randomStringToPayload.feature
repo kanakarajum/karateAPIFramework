@@ -68,3 +68,4 @@ Feature: Working with random strings, functions and passing it into scenario
     * match responseBody.email contains requestPayload.email
     * match responseBody.gender == 'male'
     * match responseBody.status == 'active'
+    * print responseBody.id

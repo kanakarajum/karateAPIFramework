@@ -7,6 +7,6 @@ class TestRunner {
 	@Karate.Test
 	Karate testAll() {
 //		return Karate.run().relativeTo(TestRunner.class);
-		return Karate.run().relativeTo(TestRunner.class).tags("@postAPIRandomString");
+		return Karate.run().relativeTo(TestRunner.class).tags("@E2E");
 	}
 }
